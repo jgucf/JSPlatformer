@@ -4,16 +4,23 @@
 .background td { padding: 0;          }
 .lava          { background: #E84A5F; }
 .wall          { background: #FECEA8; }
-.floater	   { background: #99B898; }
+.portal	   { background: #99B898; }
 
 .actor  { position: absolute;  }
 .player { background: #ff847c; }
 .coin   { background: rgb(241, 229, 89); }
-.thing  { background: white;   }
+.power  { background: white;   }
 
 .game {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
   position: relative;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
 }
